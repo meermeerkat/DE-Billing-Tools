@@ -31,5 +31,5 @@ setuptools.setup(
         'Programming Language :: Python :: 3.10'
     ],
     
-    download_url="https://github.com/meermeerkat/DE-Billing-Tools/archive/refs/tags/0.0.2.tar.gz",
+    download_url="https://github.com/meermeerkat/DE-Billing-Tools/archive/refs/tags/0.0.1.tar.gz",
 )
