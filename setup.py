@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name='de_billing_tools',                           # should match the package folder
     packages=['de_billing_tools'],                     # should match the package folder
-    version='0.0.4',                                # important for updates
+    version='0.0.6',                                # important for updates
     license='MIT',                                  # should match your chosen license
     description='Python tools for the billing team at Diamond Energy',
     long_description=long_description,              # loads your README.md
@@ -31,5 +31,5 @@ setuptools.setup(
         'Programming Language :: Python :: 3.10'
     ],
     
-    download_url="https://github.com/meermeerkat/DE-Billing-Tools/archive/refs/tags/0.0.4.tar.gz",
+    download_url="https://github.com/meermeerkat/DE-Billing-Tools/archive/refs/tags/0.0.6.tar.gz",
 )
