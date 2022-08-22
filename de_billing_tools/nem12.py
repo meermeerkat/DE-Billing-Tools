@@ -52,7 +52,8 @@ class NEM12_Parser():
         self.data = self.data[self.data[0] != '500']
         
         # remove duplicate 300 lines
-        self.data = self.data.drop_duplicates()
+        self.data = self.data.reset_index(drop=True)
+        data = data.loc[(data.fillna(-1) != data.shift(-1).fillna(-1)).any(axis=1)]
 
     def output_xml(self, file_path=None):
         """
