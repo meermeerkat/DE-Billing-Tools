@@ -55,6 +55,9 @@ class NEM12_Parser():
         self.data = self.data.reset_index(drop=True)
         self.data = self.data.loc[(self.data.fillna(-1) != self.data.shift(-1).fillna(-1)).any(axis=1)]
 
+        # replace V reads with S reads
+        self.data = self.data.replace('V', 'S')
+
     def output_xml(self, file_path=None):
         """
         Creates an xml file at the specified file path
