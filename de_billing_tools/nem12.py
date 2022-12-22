@@ -57,6 +57,7 @@ class NEM12_Parser():
 
         # replace V reads with S reads
         self.data = self.data.replace('V', 'S')
+        self.data = self.data.replace('S15', 'S')
 
     def output_xml(self, file_path=None):
         """
